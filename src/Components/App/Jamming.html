@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <link rel="stylesheet" tpye="text/css" href="./Jamming_files/reset.css">
+    <link href="./Jamming_files/css" rel="stylesheet">
+    <link href="./Jamming_files/css(1)" rel="stylesheet">
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Jamming</title>
+<style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNUOztjQUVZO0VBQ1osbUNBQW1DO0VBQ25DLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFO2FBQ1c7QUFDYiIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBtYXJnaW46IDA7XG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJyxcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXG4gICAgc2Fucy1zZXJpZjtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmNvZGUge1xuICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICBtb25vc3BhY2U7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>body,
+html,
+#root {
+  height: 100%;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  padding: .77rem 0;
+  background-color: #010c3f;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.88rem;
+  color: #fff;
+}
+
+h1 .highlight {
+  color: #6c41ec;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+}
+
+.App {
+  height: 100%;
+  padding: 0 17% 10% 17%;
+  background-image: url(/static/media/background_photo_desktop.a0687f3f.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9BcHAvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7O0VBR0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQix5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGtDQUFrQztFQUNsQyxrQkFBa0I7RUFDbEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGtDQUFrQztFQUNsQyxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osc0JBQXNCO0VBQ3RCLHlEQUF3RDtFQUN4RCxzQkFBc0I7RUFDdEIsMkJBQTJCO0VBQzNCLDRCQUE0QjtFQUM1QixvQ0FBb0M7RUFDcEMsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsV0FBVztBQUNiOztBQUVBO0VBQ0U7SUFDRSxtQkFBbUI7SUFDbkIsc0JBQXNCO0VBQ3hCO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5LFxuaHRtbCxcbiNyb290IHtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuXG5odG1sIHtcbiAgZm9udC1zaXplOiAxOHB4O1xufVxuXG5oMSB7XG4gIHBhZGRpbmc6IC43N3JlbSAwO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDEwYzNmO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtZmFtaWx5OiAnUG9wcGlucycsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc2l6ZTogMS44OHJlbTtcbiAgY29sb3I6ICNmZmY7XG59XG5cbmgxIC5oaWdobGlnaHQge1xuICBjb2xvcjogIzZjNDFlYztcbn1cblxuaDIge1xuICBmb250LWZhbWlseTogJ1BvcHBpbnMnLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDEuNTVyZW07XG59XG5cbi5BcHAge1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBhZGRpbmc6IDAgMTclIDEwJSAxNyU7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi9iYWNrZ3JvdW5kX3Bob3RvX2Rlc2t0b3AuanBlZycpO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGZvbnQtZmFtaWx5OiAnV29yayBTYW5zJywgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgY29sb3I6ICNmZmY7XG59XG5cbi5BcHAtcGxheWxpc3Qge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHdpZHRoOiAxMDAlO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEwMjBweCkge1xuICAuQXBwLXBsYXlsaXN0IHtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.SearchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6.94rem;
+    margin-bottom: 6.33rem;
+  }
+  
+  .SearchBar input {
+    width: 287px;
+    padding: .88rem 0;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-bottom: 2.22rem;
+    color: #010c3f;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .SearchBar input:focus {
+    outline: none;
+  }
+  
+  .SearchButton {
+    cursor: pointer;
+    width: 8.11rem;
+    padding: .77rem 0;
+    border-radius: 54px;
+    background-color: #010c3f;
+    text-align: center;
+    font-size: .833rem;
+    transition: background-color .25s;
+    border: 0px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .SearchButton:hover {
+    background-color: rgba(108, 65, 233, .7);
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9TZWFyY2hCYXIvU2VhcmNoQmFyLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLG9CQUFvQjtJQUNwQixzQkFBc0I7RUFDeEI7O0VBRUE7SUFDRSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLHNCQUFzQjtJQUN0QixrQkFBa0I7SUFDbEIsc0JBQXNCO0lBQ3RCLGNBQWM7SUFDZCxrQkFBa0I7SUFDbEIsZUFBZTtFQUNqQjs7RUFFQTtJQUNFLGFBQWE7RUFDZjs7RUFFQTtJQUNFLGVBQWU7SUFDZixjQUFjO0lBQ2QsaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQix5QkFBeUI7SUFDekIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixpQ0FBaUM7SUFDakMsV0FBVztJQUNYLFdBQVc7SUFDWCxnQkFBZ0I7RUFDbEI7O0VBRUE7SUFDRSx3Q0FBd0M7RUFDMUMiLCJzb3VyY2VzQ29udGVudCI6WyIuU2VhcmNoQmFyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nLXRvcDogNi45NHJlbTtcbiAgICBtYXJnaW4tYm90dG9tOiA2LjMzcmVtO1xuICB9XG4gIFxuICAuU2VhcmNoQmFyIGlucHV0IHtcbiAgICB3aWR0aDogMjg3cHg7XG4gICAgcGFkZGluZzogLjg4cmVtIDA7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiAzcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMi4yMnJlbTtcbiAgICBjb2xvcjogIzAxMGMzZjtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZm9udC1zaXplOiAxcmVtO1xuICB9XG4gIFxuICAuU2VhcmNoQmFyIGlucHV0OmZvY3VzIHtcbiAgICBvdXRsaW5lOiBub25lO1xuICB9XG4gIFxuICAuU2VhcmNoQnV0dG9uIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgd2lkdGg6IDguMTFyZW07XG4gICAgcGFkZGluZzogLjc3cmVtIDA7XG4gICAgYm9yZGVyLXJhZGl1czogNTRweDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDEwYzNmO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IC44MzNyZW07XG4gICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMjVzO1xuICAgIGJvcmRlcjogMHB4O1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIH1cbiAgXG4gIC5TZWFyY2hCdXR0b246aG92ZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMTA4LCA2NSwgMjMzLCAuNyk7XG4gIH0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.SearchResults {
+    width: 50%;
+    height: 950px;
+    overflow-y: scroll;
+    padding: .88rem;
+    background-color: rgba(1, 12, 63, 0.7);
+    box-shadow: 0 4px 2px 2px #000000;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+  
+  @media only screen and (max-width: 1020px) {
+    .SearchResults {
+      width: 90%;
+      margin-bottom: 2rem;
+    }
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9TZWFyY2hSZXN1bHRzL1NlYXJjaFJlc3VsdHMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksVUFBVTtJQUNWLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsZUFBZTtJQUNmLHNDQUFzQztJQUN0QyxpQ0FBaUM7RUFDbkM7O0VBRUE7TUFDSSxVQUFVO01BQ1YsdUJBQXVCO0VBQzNCOztFQUVBO0lBQ0U7TUFDRSxVQUFVO01BQ1YsbUJBQW1CO0lBQ3JCO0VBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuU2VhcmNoUmVzdWx0cyB7XG4gICAgd2lkdGg6IDUwJTtcbiAgICBoZWlnaHQ6IDk1MHB4O1xuICAgIG92ZXJmbG93LXk6IHNjcm9sbDtcbiAgICBwYWRkaW5nOiAuODhyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgxLCAxMiwgNjMsIDAuNyk7XG4gICAgYm94LXNoYWRvdzogMCA0cHggMnB4IDJweCAjMDAwMDAwO1xuICB9XG4gIFxuICA6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgIHdpZHRoOiAwcHg7XG4gICAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgfVxuICBcbiAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAxMDIwcHgpIHtcbiAgICAuU2VhcmNoUmVzdWx0cyB7XG4gICAgICB3aWR0aDogOTAlO1xuICAgICAgbWFyZ2luLWJvdHRvbTogMnJlbTtcbiAgICB9XG4gIH0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.TrackList {
+    width: 100%;
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9UcmFja0xpc3QvVHJhY2tMaXN0LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7RUFDYiIsInNvdXJjZXNDb250ZW50IjpbIi5UcmFja0xpc3Qge1xuICAgIHdpZHRoOiAxMDAlO1xuICB9Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.Track {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+  }
+  
+  .Track-action {
+    cursor: pointer;
+    padding: .5rem;
+    font-size: 1.05rem;
+    transition: color .25s;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+  }
+  
+  .Track-action:hover {
+    color: rgba(265, 265, 265, .5);
+  }
+  
+  .Track-information {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 72px;
+  }
+  
+  .Track-information h3 {
+    margin-bottom: .22rem;
+  }
+  
+  .Track-information p {
+    font-size: .83rem;
+    font-weight: 300;
+    color: rgba(256, 256, 256, 0.8);
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9UcmFjay9UcmFjay5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLGlEQUFpRDtFQUNuRDs7RUFFQTtJQUNFLGVBQWU7SUFDZixjQUFjO0lBQ2Qsa0JBQWtCO0lBQ2xCLHNCQUFzQjtJQUN0QixXQUFXO0lBQ1gsa0NBQWtDO0lBQ2xDLFdBQVc7RUFDYjs7RUFFQTtJQUNFLDhCQUE4QjtFQUNoQzs7RUFFQTtJQUNFLFlBQVk7SUFDWixhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixZQUFZO0VBQ2Q7O0VBRUE7SUFDRSxxQkFBcUI7RUFDdkI7O0VBRUE7SUFDRSxpQkFBaUI7SUFDakIsZ0JBQWdCO0lBQ2hCLCtCQUErQjtFQUNqQyIsInNvdXJjZXNDb250ZW50IjpbIi5UcmFjayB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDI1NiwgMjU2LCAyNTYsIDAuOCk7XG4gIH1cbiAgXG4gIC5UcmFjay1hY3Rpb24ge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBwYWRkaW5nOiAuNXJlbTtcbiAgICBmb250LXNpemU6IDEuMDVyZW07XG4gICAgdHJhbnNpdGlvbjogY29sb3IgLjI1cztcbiAgICBib3JkZXI6IDBweDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDApO1xuICAgIGNvbG9yOiAjZmZmO1xuICB9XG4gIFxuICAuVHJhY2stYWN0aW9uOmhvdmVyIHtcbiAgICBjb2xvcjogcmdiYSgyNjUsIDI2NSwgMjY1LCAuNSk7XG4gIH1cbiAgXG4gIC5UcmFjay1pbmZvcm1hdGlvbiB7XG4gICAgZmxleC1ncm93OiAxO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDcycHg7XG4gIH1cbiAgXG4gIC5UcmFjay1pbmZvcm1hdGlvbiBoMyB7XG4gICAgbWFyZ2luLWJvdHRvbTogLjIycmVtO1xuICB9XG4gIFxuICAuVHJhY2staW5mb3JtYXRpb24gcCB7XG4gICAgZm9udC1zaXplOiAuODNyZW07XG4gICAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgICBjb2xvcjogcmdiYSgyNTYsIDI1NiwgMjU2LCAwLjgpO1xuICB9Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.Playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    width: 37%;
+    max-height: 950px;
+    padding: 2.27rem 1.16rem;
+    background-color: rgba(1, 12, 63, 0.7);
+    box-shadow: 0 4px 2px 2px #000000;
+  }
+  
+  .Playlist input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #6f6f6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.55rem;
+    color: #fff;
+  }
+  
+  .Playlist-save {
+    cursor: pointer;
+    width: 10rem;
+    padding: .77rem 0;
+    border-radius: 54px;
+    border-width: 0px;
+    margin-top: 1.27rem;
+    background-color: #6c41ec;
+    text-align: center;
+    font-size: .83rem;
+    transition: background-color .25s;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .Playlist-save:hover {
+    background-color: rgba(108, 65, 233, .7);
+  }
+  
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+  
+  @media only screen and (max-width: 1020px) {
+    .Playlist {
+      width: 90%;
+    }
+  }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQ29tcG9uZW50cy9QbGF5bGlzdC9QbGF5bGlzdC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsVUFBVTtJQUNWLGlCQUFpQjtJQUNqQix3QkFBd0I7SUFDeEIsc0NBQXNDO0lBQ3RDLGlDQUFpQztFQUNuQzs7RUFFQTtJQUNFLFdBQVc7SUFDWCxTQUFTO0lBQ1QsVUFBVTtJQUNWLHVCQUF1QjtJQUN2QixnQ0FBZ0M7SUFDaEMsa0NBQWtDO0lBQ2xDLGtCQUFrQjtJQUNsQixXQUFXO0VBQ2I7O0VBRUE7SUFDRSxlQUFlO0lBQ2YsWUFBWTtJQUNaLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQix5QkFBeUI7SUFDekIsa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixpQ0FBaUM7SUFDakMsV0FBVztJQUNYLGdCQUFnQjtFQUNsQjs7RUFFQTtJQUNFLHdDQUF3QztFQUMxQzs7RUFFQTtNQUNJLFVBQVU7TUFDVix1QkFBdUI7RUFDM0I7O0VBRUE7SUFDRTtNQUNFLFVBQVU7SUFDWjtFQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLlBsYXlsaXN0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gICAgd2lkdGg6IDM3JTtcbiAgICBtYXgtaGVpZ2h0OiA5NTBweDtcbiAgICBwYWRkaW5nOiAyLjI3cmVtIDEuMTZyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgxLCAxMiwgNjMsIDAuNyk7XG4gICAgYm94LXNoYWRvdzogMCA0cHggMnB4IDJweCAjMDAwMDAwO1xuICB9XG4gIFxuICAuUGxheWxpc3QgaW5wdXQge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvcmRlcjogMDtcbiAgICBvdXRsaW5lOiAwO1xuICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjNmY2ZjZmO1xuICAgIGZvbnQtZmFtaWx5OiAnUG9wcGlucycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC1zaXplOiAxLjU1cmVtO1xuICAgIGNvbG9yOiAjZmZmO1xuICB9XG4gIFxuICAuUGxheWxpc3Qtc2F2ZSB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIHdpZHRoOiAxMHJlbTtcbiAgICBwYWRkaW5nOiAuNzdyZW0gMDtcbiAgICBib3JkZXItcmFkaXVzOiA1NHB4O1xuICAgIGJvcmRlci13aWR0aDogMHB4O1xuICAgIG1hcmdpbi10b3A6IDEuMjdyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzZjNDFlYztcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZm9udC1zaXplOiAuODNyZW07XG4gICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAuMjVzO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIH1cbiAgXG4gIC5QbGF5bGlzdC1zYXZlOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDEwOCwgNjUsIDIzMywgLjcpO1xuICB9XG4gIFxuICA6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgIHdpZHRoOiAwcHg7XG4gICAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgfVxuICBcbiAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiAxMDIwcHgpIHtcbiAgICAuUGxheWxpc3Qge1xuICAgICAgd2lkdGg6IDkwJTtcbiAgICB9XG4gIH0iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><h1> Ja <span class="highlight"> mmm </span>ing</h1><div class="App"><div class="SearchBar"><input placeholder="Enter A Song, Album, or Artist"><button class="SearchButton">SEARCH</button></div><div class="App-playlist"><div class="SearchResults"><h2>Results</h2><div class="TrackList"></div></div><div class="Playlist"><input value="New Playlist"><div class="TrackList"></div><button class="Playlist-save">SAVE TO SPOTIFY</button></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+<script src="./Jamming_files/bundle.js"></script><script src="./Jamming_files/vendors_main.chunk.js"></script><script src="./Jamming_files/main.chunk.js"></script>
+
+<iframe style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; border: none; z-index: 2147483647;" src="./Jamming_files/saved_resource.html"></iframe></body></html>

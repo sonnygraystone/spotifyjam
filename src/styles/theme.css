@@ -1,0 +1,6 @@
+/* pr-demo: experimental dark theme tokens */
+:root[data-theme="dark"] {
+  --bg: #121212;
+  --fg: #e8e8e8;
+  --accent: #1db954;
+}

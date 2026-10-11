@@ -32,3 +32,5 @@ class Playlist extends React.Component {
 }
 
 export default Playlist;
+
+// pr-demo: TODO call shuffle(tracks) from the Shuffle button handler

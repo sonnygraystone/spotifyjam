@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Acceptance hold (push only)
+        if: github.event_name == 'push'
+        run: sleep 90
       - name: Install
         run: echo "npm ci (demo)"
       - name: Build
